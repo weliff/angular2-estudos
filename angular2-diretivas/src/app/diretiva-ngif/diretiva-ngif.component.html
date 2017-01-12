@@ -1,0 +1,20 @@
+<h5>*ngIf</h5>
+
+<div *ngIf="cursos.length == 0">
+  Lista de cursos aqui
+</div>
+
+
+<div [hidden]="!cursos.length == 0">
+  Lista de cursos aqui (Usando hidden)
+</div>
+
+<template [ngIf]="cursos.length == 0">
+  <div>
+    Diretiva ngIf sem * com template
+  </div>
+</template> 
+
+<div template="ngIf cursos.length == 0">
+    Diretiva ngIf sem * com template 2
+</div>

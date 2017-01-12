@@ -1,0 +1,93 @@
+<section>
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>String Interpolation {{nome}}</p>
+        <p>Expresao numerica Interpolation {{1 + 1}}</p>
+        <p>Chamando metodo Interpolation {{getValor()}}</p>
+        <p>Expresao numerica Interpolation (1 == 2) = {{1 == 2}}</p>
+
+        <p>Exemplos de property binding</p>
+        <img src="{{urlImg}}"/><!-- Interpolação -->
+        <img [src]="urlImg"/> <!-- property binding "sugar"-->
+        <img bind-src="urlImg"/>
+    </article>
+
+    <article>
+        <h3>Class e Style binding (Property binding: Component -> Template)</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-warning">Warning</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-danger">Error</option>
+            </select>
+        </div>
+        <br>
+        <div class="alert {{classe.value}}">
+            Esse texto será pintado de acordo com a selecao do tipo de warning utilizando Interpolação  
+        </div>
+        <br>
+        <div class="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+        <div class="alert" [class.alert-warning]="classe.value == 'alert-warning'">Warning</div>
+        <div class="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
+        <div class="alert" [class.alert-danger]="classe.value == 'alert-danger'">Error</div>
+
+        <div class="alert alert-danger" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+            Essa div só aparece em caso de erro
+        </div>
+    </article>
+    <section class="event-binding">
+        <article>
+            <h3>Event binding Template -> Component</h3>
+            <div>
+                <button (click)="onClick()">Me clique</button>
+                <input (keyup)="onKeyup($event)"
+                    (keyup.enter)="onSave($event.target.value)" 
+                    #campo (blur)="onSave(campo.value)"
+                    />
+            </div>
+            <div>
+                Conteudo atual: {{conteudoAtual}}
+            </div>
+            <div>
+                Conteudo salvo: {{conteudoSalvo}}
+            </div>
+            <br>
+            <div (mouseover)="onMouseSpan()" (mouseout)="onMouseSpan()" [class.highligth]="isMouseOver">
+                Passe o mouse sobre mim
+            </div>
+        </article>
+        <br>
+        <article>
+            <h3>Two-way data binding forma 1</h3>
+            <input [value]="nome" (input)="nome = $event.target.value"/>
+            Nome:{{nome}}
+            <h3>Two-way data binding forma 2</h3>
+            <input [ngModel]="nome" (ngModelChange)="nome = $event"/>
+            Nome:{{nome}}
+            <h3>Two-way data binding forma 3</h3>
+            <input [(ngModel)]="nome"/>
+            Nome:{{nome}}
+        </article>
+
+        <div>
+            <div>
+                Nome: <input [(ngModel)]="pessoa.nome"/>
+                Idade: <input [(ngModel)]="pessoa.idade"/>
+            </div>
+            Eu sou {{pessoa.nome}} e tenho {{pessoa.idade}} anos de idade.
+        </div>
+
+        <article>
+            <h2>Input properties</h2>
+            <!--<cursos nome="Angular 2"></cursos>-->
+            <cursos [nome]=nomeCurso></cursos>
+        </article>
+        <article>
+            <h2>Output properties</h2>
+            <contador [valor]="valorInicial" (valorMudou)=onValorMudou($event)></contador>
+        </article>
+
+    </section>
+</section>

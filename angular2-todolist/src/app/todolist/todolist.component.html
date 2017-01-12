@@ -1,0 +1,16 @@
+
+
+<article>
+<input required #itemControl="ngModel" [(ngModel)]="item.descricao" placeholder="Digite o que você quer fazer"/>
+  <button (click)="adicionar(item)">Adicionar</button>
+  <ul class="lista-simples">
+      <li  [class.riscado]="item.selecionado" *ngFor="let item of lista"><input type="checkbox" [(ngModel)]="item.selecionado"  />{{item.id}} {{item.descricao}}</li>
+  </ul>
+  <button (click)="remover(lista)">Remover</button>
+</article>
+
+<div *ngIf="itemControl.dirty && itemControl.invalid" >
+  <p>
+      Preencha o campo!!!
+  </p> 
+</div>

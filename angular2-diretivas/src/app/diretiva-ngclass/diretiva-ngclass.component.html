@@ -1,0 +1,20 @@
+<h3>
+  diretiva-ngclass works!
+</h3>
+<h4>
+  Class com property binding <br>
+  <i class="glyphicon" 
+    [class.glyphicon-star]="meuFavorito"
+    [class.glyphicon-star-empty]="!meuFavorito"
+    (click)="meuFavorito = !meuFavorito">
+  </i>
+</h4>
+
+<h4>
+  Class com a diretiva ngClass <br>
+  <i class="glyphicon" 
+    [ngClass]="{'glyphicon-star': meuFavorito,
+      'glyphicon-star-empty': !meuFavorito}"
+    (click)="meuFavorito = !meuFavorito">
+  </i>
+</h4>

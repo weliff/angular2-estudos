@@ -1,0 +1,204 @@
+
+> angular-quickstart@1.0.0 cucumber /Users/raul/Developer/workspace-angular2/hein/angular-tour-of-heroes
+> protractor protractor.config.js
+
+[16:14:51] I/local - Starting selenium standalone server...
+[16:14:51] I/launcher - Running 1 instances of WebDriver
+[16:14:52] I/local - Selenium standalone server started at http://172.26.1.67:62993/wd/hub
+Funcionalidade: Cadastrar um novo heroi usando Angular tour of heroes
+
+       Como administrador do sistema "Angular Tour of Heroes"
+       Eu devo ser capaz de adicionar um novo heroi
+
+  Cenário,Cenario:
+  [33m? Dado que eu esteja logado como um administrador válido[39m
+  [33m? Quando eu informar os dados do batman[39m
+  [33m? E clicar no botão Save[39m
+  [33m? Então devo ver o novo heroi na lista de herois[39m
+
+  Cenário,Cenario:
+  [33m? Dado que eu esteja logado como um administrador válido[39m
+  [33m? Quando eu informar os dados do superman[39m
+  [33m? E clicar no botão Save[39m
+  [33m? Então devo ver o novo heroi na lista de herois[39m
+
+  Cenário,Cenario:
+  [33m? Dado que eu esteja logado como um administrador válido[39m
+  [33m? Quando eu acessar o Dashboard[39m
+  [33m? Então devo devo os tops herois[39m
+
+  Cenário,Cenario:
+  [33m? Dado que eu esteja logado como um administrador válido[39m
+  [33m? Quando eu acessar o Heroes[39m
+  [33m? E preencher as informações de um novo heroi[39m
+  [33m? E clicar em Add[39m
+  [33m? Então deve ser exibido o novo heroi na lista de herois cadastrados[39m
+
+Warnings:
+
+1) Scenario:  - [90mtest/features/be_a_heroe.feature:15[39m
+   Step: [1mDado que eu esteja logado como um administrador válido[22m - [90mtest/features/be_a_heroe.feature:8[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.Given(/^que eu esteja logado como um administrador válido$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+2) Scenario:  - [90mtest/features/be_a_heroe.feature:15[39m
+   Step: [1mQuando eu informar os dados do batman[22m - [90mtest/features/be_a_heroe.feature:9[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.When(/^eu informar os dados do batman$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+3) Scenario:  - [90mtest/features/be_a_heroe.feature:15[39m
+   Step: [1mE clicar no botão Save[22m - [90mtest/features/be_a_heroe.feature:10[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.When(/^clicar no botão Save$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+4) Scenario:  - [90mtest/features/be_a_heroe.feature:15[39m
+   Step: [1mEntão devo ver o novo heroi na lista de herois[22m - [90mtest/features/be_a_heroe.feature:11[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.Then(/^devo ver o novo heroi na lista de herois$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+5) Scenario:  - [90mtest/features/be_a_heroe.feature:16[39m
+   Step: [1mDado que eu esteja logado como um administrador válido[22m - [90mtest/features/be_a_heroe.feature:8[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.Given(/^que eu esteja logado como um administrador válido$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+6) Scenario:  - [90mtest/features/be_a_heroe.feature:16[39m
+   Step: [1mQuando eu informar os dados do superman[22m - [90mtest/features/be_a_heroe.feature:9[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.When(/^eu informar os dados do superman$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+7) Scenario:  - [90mtest/features/be_a_heroe.feature:16[39m
+   Step: [1mE clicar no botão Save[22m - [90mtest/features/be_a_heroe.feature:10[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.When(/^clicar no botão Save$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+8) Scenario:  - [90mtest/features/be_a_heroe.feature:16[39m
+   Step: [1mEntão devo ver o novo heroi na lista de herois[22m - [90mtest/features/be_a_heroe.feature:11[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.Then(/^devo ver o novo heroi na lista de herois$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+9) Scenario:  - [90mtest/features/be_a_heroe.feature:18[39m
+   Step: [1mDado que eu esteja logado como um administrador válido[22m - [90mtest/features/be_a_heroe.feature:19[39m
+   Message:
+     [33mUndefined. Implement with the following snippet:
+
+       this.Given(/^que eu esteja logado como um administrador válido$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });[39m
+
+10) Scenario:  - [90mtest/features/be_a_heroe.feature:18[39m
+    Step: [1mQuando eu acessar o Dashboard[22m - [90mtest/features/be_a_heroe.feature:20[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.When(/^eu acessar o Dashboard$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+11) Scenario:  - [90mtest/features/be_a_heroe.feature:18[39m
+    Step: [1mEntão devo devo os tops herois[22m - [90mtest/features/be_a_heroe.feature:21[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.Then(/^devo devo os tops herois$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+12) Scenario:  - [90mtest/features/be_a_heroe.feature:23[39m
+    Step: [1mDado que eu esteja logado como um administrador válido[22m - [90mtest/features/be_a_heroe.feature:24[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.Given(/^que eu esteja logado como um administrador válido$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+13) Scenario:  - [90mtest/features/be_a_heroe.feature:23[39m
+    Step: [1mQuando eu acessar o Heroes[22m - [90mtest/features/be_a_heroe.feature:25[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.When(/^eu acessar o Heroes$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+14) Scenario:  - [90mtest/features/be_a_heroe.feature:23[39m
+    Step: [1mE preencher as informações de um novo heroi[22m - [90mtest/features/be_a_heroe.feature:26[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.When(/^preencher as informações de um novo heroi$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+15) Scenario:  - [90mtest/features/be_a_heroe.feature:23[39m
+    Step: [1mE clicar em Add[22m - [90mtest/features/be_a_heroe.feature:27[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.When(/^clicar em Add$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+16) Scenario:  - [90mtest/features/be_a_heroe.feature:23[39m
+    Step: [1mEntão deve ser exibido o novo heroi na lista de herois cadastrados[22m - [90mtest/features/be_a_heroe.feature:28[39m
+    Message:
+      [33mUndefined. Implement with the following snippet:
+
+        this.Then(/^deve ser exibido o novo heroi na lista de herois cadastrados$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });[39m
+
+4 scenarios ([33m4 undefined[39m)
+16 steps ([33m16 undefined[39m)
+0m00.000s
+[16:14:54] I/local - Shutting down selenium standalone server.
+[16:14:54] I/launcher - 0 instance(s) of WebDriver still running
+[16:14:54] I/launcher - chrome #01 passed
